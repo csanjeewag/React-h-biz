@@ -2,6 +2,27 @@ import React from 'react';
 import * as microsoftTeams from "@microsoft/teams-js";
 import './../App.css';
 
+function getClientSideToken() {
+
+  return new Promise((resolve, reject) => {
+
+      console.log("1. Get auth token from Microsoft Teams");
+
+      microsoftTeams.authentication.getAuthToken({
+          successCallback: (result) => {
+              //display(result)
+              console.log(result);
+              resolve(result);
+          },
+          failureCallback: function (error) {
+              reject("Error getting token: " + error);
+              console.log('Error getting token');
+          }
+      });
+
+  });
+
+}
 
 function App() {
 
@@ -17,6 +38,9 @@ function App() {
       console.log('no theme');
     }
 });
+
+getClientSideToken();
+
 
   return (
     <div className="App">
