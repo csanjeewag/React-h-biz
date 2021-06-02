@@ -32,10 +32,10 @@ function App() {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <Link className="nav-link" to="/">Home</Link>
+                  <Link className="nav-link" to="/React-h-biz">Home</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/ssoDemo">ssoDemo</Link>
+                  <Link className="nav-link" to="/React-h-biz/ssoDemo">ssoDemo</Link>
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link" to="/config/:slug">Config</Link>
