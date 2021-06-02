@@ -49,13 +49,13 @@ function App() {
         </nav>
 
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/React-h-biz">
             <Home />
           </Route>
-          <Route exact path="/ssoDemo">
+          <Route exact path="/React-h-biz/ssoDemo">
             <Home />
           </Route>
-          <Route path="/config/:slug">
+          <Route path="config/:slug">
             <BlogPost />
           </Route>
         </Switch>
